@@ -14,7 +14,7 @@
   <body>
     <div id="wrapper">
       <div id="header">
-        <h1><a href="<?php bloginfo('url') ?>">Holy shit an h1 with a link!</a></h1>
+        
         <div id="nav">
           
         </div>
