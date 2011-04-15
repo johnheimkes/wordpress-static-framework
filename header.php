@@ -9,7 +9,7 @@
     <meta name="Description" content="Descritpion" />
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url') ?>" type="text/css" media="screen" />
     <link rel="shortcut icon" href="<?php bloginfo('template_url') ?>/images/favicon.ico" />
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
   </head>
   <body>
     <div id="wrapper">
