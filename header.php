@@ -3,10 +3,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>title</title>
-    <meta name="Author" content="Author" />
-    <meta name="Robots" content="index,all" />
-    <meta name="Keywords" content="Key Words" />
-    <meta name="Description" content="Descritpion" />
+    <meta name="robots" content="index,all" />
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url') ?>" type="text/css" media="screen" />
     <link rel="shortcut icon" href="<?php bloginfo('template_url') ?>/images/favicon.ico" />
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
