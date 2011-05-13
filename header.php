@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" xml:lang="en">
+<html <?php language_attributes(); ?>>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>title</title>
+    <title><?php wp_title(); ?> <?php bloginfo( 'name' ); ?></title>
     <meta name="Author" content="Author" />
     <meta name="Robots" content="index,all" />
     <meta name="Keywords" content="Key Words" />
