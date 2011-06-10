@@ -2,13 +2,10 @@
 <html <?php language_attributes(); ?>>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<<<<<<< HEAD
     <title><?php wp_title(); ?> <?php bloginfo( 'name' ); ?></title>
     <meta name="Robots" content="index,all" />
-=======
     <title>title</title>
     <meta name="robots" content="index,all" />
->>>>>>> 2c09b4150b3de0080365166e5a67e982764ceec2
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url') ?>" type="text/css" media="screen" />
     <link rel="shortcut icon" href="<?php bloginfo('template_url') ?>/images/favicon.ico" />
     <?php wp_head(); ?>
