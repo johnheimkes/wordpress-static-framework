@@ -3,8 +3,6 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title><?php wp_title(); ?> <?php bloginfo( 'name' ); ?></title>
-    <title>title</title>
-    <meta name="robots" content="index,all" />
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url') ?>" type="text/css" media="screen" />
     <link rel="shortcut icon" href="<?php bloginfo('template_url') ?>/images/favicon.ico" />
     <?php wp_head(); ?>

@@ -25,7 +25,7 @@
 <? get_footer(); ?>
 
 <!--
-OR SIMPLE LOOP TO PULL PAGE CONTENT
+OR SIMPLE LOOP TO PULL ONLY PAGE CONTENT
 <? get_header(); ?>
 <div id="content">
   <? get_sidebar(); ?>
