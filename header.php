@@ -1,11 +1,11 @@
 <?php
 /**
- * The Header for your theme.
- *
- * Displays all of the <head> section and everything up till <div class="page-content">
- *
- * @package Static_Framework
- */
+* The Header for your theme.
+*
+* Displays all of the <head> section and everything up till <div class="page-content">
+*
+* @package Static_Framework
+*/
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -14,17 +14,17 @@
     
     <title><?php wp_title( '|', true, 'right' ); ?></title>
     
-    <link rel="shortcut icon" href="<?php bloginfo('template_url') ?>/images/favicon.ico" />
+    <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+    <link rel="shortcut icon" href="<?php STATIC_THEME_PATH_URL; ?>/images/favicon.ico" />
     
     <?php wp_head(); ?>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script
-    <script type="text/javascript" src="<?php bloginfo('template_url') ?>/js/app.js"></script>
 </head>
 <body <?php body_class(); ?>>
-<div id="wrapper">
-  <div id="header">
-    
-    <div id="nav">
-      
-    </div>
-  </div>
+    <div class="page-wrapper">
+        <header>
+            <div id="nav">
+
+            </div>
+        </header>
+
+        <div class="page-content">

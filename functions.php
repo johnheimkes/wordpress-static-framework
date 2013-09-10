@@ -6,7 +6,7 @@
  * @author John Heimkes IV <john@markupisart.com>
  */
 
-add_action('after_setup_theme', array('NERD_Theme', 'after_setup_theme'));
+add_action('after_setup_theme', array('Static_Theme', 'after_setup_theme'));
 
 /**
  * Constants
@@ -70,31 +70,6 @@ class Static_Theme
         include_once 'functions/register-post-types.php';
         include_once 'functions/register-taxonomies.php';
         include_once 'functions/register-menus.php';
-        include_once 'functions/register-sidebars.php';
-    }
-
-    /**
-     * Includes for widget class files
-     *
-     * @return void
-     */
-    private static function _widgets()
-    {
-        /**
-         * Widgets
-         */
-        // include_once 'widgets/my-widget.php';
-    }
-
-    /**
-     * Init Theme-specific Widgets
-     * see Widgets_API {@link http://goo.gl/B2H6y}
-     *
-     */
-    public static function widget_init()
-    {
-        // register all the widgets
-        // register_widget('My_Widget');
     }
 
     /**
@@ -107,7 +82,7 @@ class Static_Theme
         // Global script
         wp_register_script(
             'static-global',
-            STATIC_THEME_PATH_URL . 'assets/scripts/global.js',
+            STATIC_THEME_PATH_URL . 'js/app.js',
             array('jquery'),
             STATIC_THEME_VER,
             true
@@ -163,8 +138,7 @@ class Static_Theme
         $wp_styles->add_data('static-ie9', 'conditional', 'lte IE 9');
         $wp_styles->add_data('static-ie8', 'conditional', 'lte IE 8');
 
-        // Queue the stylesheets. Note that because static-screen was registered
-        // with static-wysiwyg as a dependency, it does not need to be enqueued here.
+        // Queue the stylesheets
         wp_enqueue_style('static-ie9');
         wp_enqueue_style('static-ie8');
 

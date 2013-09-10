@@ -1,14 +1,16 @@
-<? get_header(); ?>
-<div id="content">
-  <div id="not_found" class="article">
-    <h2 class="post-title">Nothing found</h2>
-    <div class="post_content">
-      <p>Sorry, but nothing matched your search criteria. Please try again with some different keywords.</p>
-      <div class="search">
-        <?php get_search_form(); ?>
-      </div>
-    </div>
-  </div>
-</div>
-<? get_sidebar(); ?>
-<? get_footer(); ?>
+<?php
+/**
+ * Static Framework
+ *
+ * @category Static_Framework
+ * @package Static_Framework
+ * @subpackage 404
+ * @author John Heimkes IV <john@markupisart.com>
+ * @version 1.0
+ */
+
+get_header(); ?>
+
+<h2>404</h2>
+
+<?php get_footer(); ?>
