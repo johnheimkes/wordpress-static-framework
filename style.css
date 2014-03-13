@@ -1,52 +1,190 @@
 /*
-Theme Name: Heimkes Static Framework
-Theme URI: http://github.com/johnheimkes/wordpress-static-framework
-Description: Change this in style.css
-Author: John Heimkes IV
-Author URI: https://github.com/johnheimkes
-Version: 1.0
-*/
+ * Theme Name: Heimkes Static Framework
+ * Theme URI: http://github.com/johnheimkes/wordpress-static-framework
+ * Description: Change this in style.css
+ * Author: John Heimkes IV
+ * Author URI: https://github.com/johnheimkes
+ * Version: 1.0
+ */
+
+/* ---------------------------------------------------------------------
+ CSS Reset
+------------------------------------------------------------------------ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* ---------------------------------------------------------------------
+ Fonts
+------------------------------------------------------------------------ */
 
 
-/*----------------------------------------------------------------------------
-=General
------------------------------------------------------------------------------*/
+/* ---------------------------------------------------------------------
+ Grid
+------------------------------------------------------------------------ */
+.grid-row-push-l {
+    margin-bottom: 60px;
+}
+
+.grid-row-push-m {
+    margin-bottom: 30px;
+}
+
+.grid-row-push-s {
+    margin-bottom: 20px;
+}
+
+.grid-col {
+    float: left;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.grid-col img {
+    max-width: 100%;
+}
+
+.grid-col-right {
+    float: right;
+}
+
+.grid-col-middle {
+    float: none;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.grid-col-right-single { margin-right: 20%; }
+
+.grid-col + .grid-col { margin-left: 2.291666666667%; } /* approx 20px margin on 960width  */
+
+.grid-col-1 { width: 6.145833333333%; }
+.grid-col-2 { width: 14.6875%; }
+.grid-col-3 { width: 23.229166666667%; }
+.grid-col-4 { width: 31.770833333333%; }
+.grid-col-5 { width: 40.3125%; }
+.grid-col-6 { width: 48.854166666667%; }
+.grid-col-7 { width: 57.395833333333%; }
+.grid-col-8 { width: 65.9375%; }
+.grid-col-9 { width: 74.479166666667%; }
+.grid-col-10 { width: 83.020833333333%; }
+.grid-col-11 { width: 91.5625%; }
+.grid-col-12 { width: 100%; }
+
+.grid-row-s .grid-col + .grid-col { margin-left: 2.733819095477%; } /* approx 20px margin on 960width  */
+.grid-row-s .grid-col-1 { width: 7.518796992481%; }
+.grid-row-s .grid-col-2 { width: 17.794486215539%; }
+.grid-row-s .grid-col-3 { width: 28.070175438596%; }
+.grid-row-s .grid-col-4 { width: 38.345864661654%; }
+.grid-row-s .grid-col-5 { width: 48.621553884712%; }
+.grid-row-s .grid-col-6 { width: 58.897243107769%; }
+.grid-row-s .grid-col-7 { width: 69.172932330827%; }
+.grid-row-s .grid-col-8 { width: 79.448621553885%; }
+.grid-row-s .grid-col-9 { width: 89.724310776942%; }
+.grid-row-s .grid-col-10 { width: 100%; }
+
+/* ---------------------------------------------------------------------
+ Headings
+------------------------------------------------------------------------ */
+
+.hdg {
+    line-height: 1;
+    color: absolute;
+    font-weight: 300;
+}
+
+.hdg-cap { text-transform: uppercase; }
+.hdg-bold { font-weight: bold; }
+.hdg-italic { font-style: italic; }
+.hdg-inline { display: inline-block; }
+
+.hdg-1 { font-size: 45px; }
+.hdg-2 { font-size: 33px; }
+.hdg-3 { font-size: 18px; }
+.hdg-4 { font-size: 14px; }
+.hdg-5 { font-size: 12px; }
+.hdg-6 { font-size: 10px; }
+
+/* ---------------------------------------------------------------------
+ Horizontal List
+------------------------------------------------------------------------ */
+
+.h-list {
+    overflow: hidden;
+    color: #e24936;
+    font-weight: 300;
+}
+
+.h-list > * {
+    float: left;
+}
+
+/* ---------------------------------------------------------------------
+ Inputs
+------------------------------------------------------------------------ */
 
 
+/* ---------------------------------------------------------------------
+ Base Styles
+------------------------------------------------------------------------ */
+body {
+    background: #ffffff;
+    position: relative;
+    font: 14px/1.5 Helvetica, Arial, sans-serif;
+    color: #000000;
+}
 
-/*----------------------------------------------------------------------------
-=Header
------------------------------------------------------------------------------*/
+a {
+    color: #e24936;
+    text-decoration: none;
+}
 
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
 
-
-/*----------------------------------------------------------------------------
-=Headings
------------------------------------------------------------------------------*/
-
-
-
-
-/*----------------------------------------------------------------------------
- =Main Nav
------------------------------------------------------------------------------*/
-
-
-
-
-/*----------------------------------------------------------------------------
-=Sub Nav
------------------------------------------------------------------------------*/
-
-
-
-
-/*----------------------------------------------------------------------------
-=Main Content
------------------------------------------------------------------------------*/
-
-
-
-/*----------------------------------------------------------------------------
-=Footer
------------------------------------------------------------------------------*/
+img {
+    max-width: 100%;
+    height: auto;
+}
