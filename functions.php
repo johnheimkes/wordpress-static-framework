@@ -39,7 +39,7 @@ class Static_Theme
     public static function after_setup_theme()
     {
         self::_includes();
-        self::_widgets();
+        // self::_widgets();
 
         /**
          * Theme Supports
@@ -51,7 +51,7 @@ class Static_Theme
         /**
          * Actions and filters
          */
-        add_action('widgets_init', array('Static_Theme', 'widget_init'));
+        // add_action('widgets_init', array('Static_Theme', 'widget_init'));
         add_action('wp_enqueue_scripts', array('Static_Theme', 'enqueue_scripts'));
         add_action('wp_enqueue_scripts', array('Static_Theme', 'enqueue_styles'));
 
